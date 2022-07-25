@@ -134,6 +134,43 @@
   margin-bottom: 2px;
 }
 
+.input2 {
+  opacity: 1;
+  margin-top: 4px;
+  height: 20px;
+  width: 30px;
+  border-radius: 30px;
+}
+
+.input {
+  margin-top: 5%;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: black;
+  letter-spacing: 1px;
+  font-size: 26px;
+  width: 350px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  margin-left: -3%;
+}
+
+.input::placeholder {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

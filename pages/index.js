@@ -75,6 +75,7 @@ export default function Home() {
         >
           Built by @0xDhruva
         </a>
+        <a href="https://github.com/Dhruv-2003/Web3.StorageDemoApp">Github</a>
       </footer>
     </div>
   );
