@@ -14,7 +14,7 @@ export default function Home() {
       const URL = `https://ipfs.io/ipfs/${cid}`;
       console.log(URL);
       console.log("File uploaded to IPFS");
-      await setIpfsUrl(URL);
+      setIpfsUrl(URL);
     } catch (err) {
       console.log(err);
     }
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
           <div className={styles.buttonRow}>
             <button onClick={upload} className={styles.button}>
-              Let's Go 🚀
+              Lets Go 🚀
             </button>
           </div>
           <div className={styles.secondrow}>
