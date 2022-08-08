@@ -10,6 +10,7 @@ export default function Home() {
 
   const upload = async () => {
     try {
+      console.log(files);
       const cid = await StoreContent(files);
       const URL = `https://ipfs.io/ipfs/${cid}`;
       console.log(URL);
@@ -46,7 +47,8 @@ export default function Home() {
               <input
                 className={styles.inputBox}
                 type="file"
-                onChange={(e) => setFiles(e.target.files[0])}
+                onChange={(e) => setFiles(e.target.files)}
+                multiple
               ></input>
             </label>
           </div>
